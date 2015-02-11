@@ -1,0 +1,11 @@
+name: CleanSession
+description: Clean all opened tabs by saving them into bookmarks
+dependencies:
+  async_await:
+    git: git://github.com/dart-lang/async_await.git
+  chrome: any
+transformers:
+- chrome
+- async_await
+- $dart2js:
+    csp: true

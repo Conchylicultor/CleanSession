@@ -1,0 +1,22 @@
+{
+  "name": "CleanSession",
+  "description": "Save all opened tabs into bookmarks when closing the browser",
+  "version": "0.8.4",
+  
+  "manifest_version": 2,
+  
+  "permissions": [
+    "tabs", "bookmarks"
+  ],
+  
+  "icons": {"128": "cleaner_icon.png"},
+
+  "background": {
+    "scripts": ["main.dart.js"]
+  },
+
+  "browser_action": {
+      "default_icon" : "cleaner_icon.png",
+      "default_title": "Clean the session"
+  }
+}
